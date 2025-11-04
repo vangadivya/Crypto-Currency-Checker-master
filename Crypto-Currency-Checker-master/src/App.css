@@ -1,0 +1,116 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 420px;
+  margin: 20px auto;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+  color: #1e3c72;
+}
+
+label {
+  font-weight: bold;
+  color: #1e3c72;
+  display: block;
+  margin-top: 12px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 15px;
+  margin-bottom: 15px;
+  transition: border 0.3s;
+}
+
+select:focus {
+  border-color: #2a5298;
+  outline: none;
+  box-shadow: 0 0 6px rgba(42,82,152,0.5);
+}
+
+.output-box {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.output-box.loading {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.output-box.success {
+  background: #e6ffe6;
+  color: #0a7500;
+}
+
+.output-box.error {
+  background: #ffe6e6;
+  color: #a30000;
+}
+
+.top-cryptos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.crypto-card {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 12px;
+  width: 80px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.crypto-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.crypto-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  width: 85%;
+  max-width: 1100px;
+  gap: 20px;
+}
+
+.left, .right {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
